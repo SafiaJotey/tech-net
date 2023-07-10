@@ -1,7 +1,7 @@
+import { FiSend } from 'react-icons/fi';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
 import { Button } from './ui/button';
 import { Textarea } from './ui/textarea';
-import { FiSend } from 'react-icons/fi';
 
 const dummyComments = [
   'Bhalo na',
@@ -10,7 +10,8 @@ const dummyComments = [
   '200 taka dibo, hobe ??',
 ];
 
-export default function ProductReview() {
+export default function ProductReview(props: { id: string }) {
+  console.log(props);
   return (
     <div className="max-w-7xl mx-auto mt-5">
       <div className="flex gap-5 items-center">
