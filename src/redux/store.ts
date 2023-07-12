@@ -3,10 +3,12 @@ import { api } from './api/apiSlice';
 
 import cartReducer from './feature/cart/cartSlice';
 import productReducer from './feature/products/productSlice';
+import userReducer from './feature/user/userSlice';
 const store = configureStore({
   reducer: {
     cart: cartReducer,
     product: productReducer,
+    user: userReducer,
     [api.reducerPath]: api.reducer,
   },
   middleware: (getDefaultMiddleware) =>
